@@ -8,11 +8,14 @@ body {
     font-size: 1.4rem;
     line-height: 2.1rem;
     font-weight: 400;
+    text-align: center;
 }
 
 button {
     font-family: 'Raleway', sans-serif;
     background: $background-button;
+    color: $color-button;
+    font-weight: 700;
 }
 
 footer {
@@ -21,7 +24,7 @@ footer {
 }
 
 .intro {
-    background: $background-intro;
+
     color: $color-intro;
 }
 
@@ -32,3 +35,315 @@ footer {
 
 //TYPOGRAPHY AND COLORS ----END
 
+body {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header, .main, .footer {
+    max-width: 37.5rem;
+}
+
+.header {
+    padding: 2.4rem 2.4rem 0;
+    margin-bottom: 9.8rem;
+    width: 100%;
+}
+
+.nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    &__logo {
+        width: 8rem;
+        position: relative;
+        top: 3px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__list-item {
+        list-style: none;
+        margin-right: 2.4rem;
+    }
+
+    &__list-item:last-child {
+        margin-right: 0;
+    }
+
+    &__list-link {
+        color: $color-body;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+}
+
+.hero {
+
+    padding: 0 2.8rem;
+    margin-bottom: 9rem;
+
+    &__image-container {
+        margin-bottom: 4rem;
+    }
+
+    &__heading {
+        font-size: 2.4rem;
+        line-height: 3.6rem;
+        font-weight: 700;
+        margin-bottom: 2.4rem;
+    }
+
+    &__about {
+        padding: 0 1rem;
+        margin-bottom: 3.2rem;
+    }
+
+    &__input {
+        width: 95%;
+        height: 4rem;
+        padding: 1.4rem 2.1rem 1.2rem;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+        border: 0.625px solid #07043B;
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+        border-radius: 3.125px;
+        outline: none;
+        margin-bottom: 1.6rem;
+    }
+
+    &__button {
+        width: 95%;
+        height: 4rem;
+        border:none;
+        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+        border-radius: 3.125px;
+    }
+}
+
+.intro {
+
+    &__curve-top {
+        position: relative;
+        top:6px;    
+    }
+
+    &__content-wrapper {
+        background: $background-intro;
+        padding-bottom: 8.19rem;
+    }
+
+    &__image-container {
+        padding: 4rem 2.8rem 8.7rem;
+    }
+
+    &__text-content {
+        padding: 0 2rem;
+    }
+
+    &__heading {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color:$Very-Dark-Blue;
+        margin-bottom: 2.4rem;
+    }
+
+    &__about {
+        margin-bottom: 1.6rem;
+    }
+
+    &__link {
+        display: block;
+        color: $color-link;
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+    }
+    
+    &__link-wrapper {
+        width: 13rem;
+        margin: 3.6rem auto 4rem;
+        display: flex;
+        align-items: center;
+        padding-bottom: 0.6rem;
+        border-bottom: 1px solid $Moderate-Cyan;
+    }
+
+    &__link-icon {
+        margin-left:0.8rem;
+        width: 12px;
+    }
+
+    &__testimonials-container {
+        background: $background-body;
+        box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
+        border-radius: 3.93258px;
+        padding: 2.8rem 1.2rem 1.8rem 2.5rem;
+        text-align: left;
+        width: 83.59%;
+        margin: auto;
+    }
+
+    &__testimonial-quote {
+        margin-bottom: 0.5rem;
+    }
+
+    &__testimonial {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        letter-spacing: 0.38px;
+        margin-bottom: 1.1rem;
+    }
+
+    &__testimonial-profile-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    &__testimonial-profile-pic {
+        width: 24px;
+        border-radius: 50%;
+        margin-right: 0.7rem;
+    }
+
+    &__testimonial-name {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.45px;
+        color: $Very-Dark-Blue;
+        font-weight: 700;
+    }
+
+    &__testimonial-position {
+        font-size: 0.6rem;
+        line-height: 1.1rem;
+        letter-spacing: 0.3px;
+    }
+}
+
+.sign-up {
+    padding:5.8rem 4.8rem 7.1rem;
+
+    &__heading {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        margin-bottom: 1.6rem;
+    }
+
+    &__about {
+        margin-bottom: 2.4rem;
+    }
+
+    &__input {
+        width: 24rem;
+        height: 3.2rem;
+        padding: 1.1rem 0.8rem 0.9rem;
+        font-size: 1rem;
+        line-height: 1.1rem;
+        border: none;
+        color: $Light-Gray;
+        box-shadow: 1px 1px 3px rgba(7, 4, 59, 0.157043);
+        border-radius: 1.47059px;
+        outline: none;
+        margin-bottom: 0.8rem;
+    }
+
+    &__button {
+        width: 24rem;
+        height: 3.2rem;
+        border:none;
+        box-shadow: 1px 1px 3px rgba(7, 4, 59, 0.157043);
+        border-radius: 1.47059px;
+        font-size: 1rem;
+        line-height: 1.1rem;
+    }
+}
+
+.footer {
+    text-align: left;
+    padding: 6.5rem 3.9rem 4.2rem;
+    width: 100%;
+    
+    &__logo {
+        width: 105px;
+        margin-bottom: 3.2rem;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(4%) saturate(15%) hue-rotate(138deg) brightness(107%) contrast(107%);
+    }
+
+    &__contact-container {
+        margin-bottom: 3.2rem;
+    }
+
+    &__contact-wrapper {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.6rem;
+    }
+
+    &__contact-icon {
+        margin-right: 1.6rem ;
+    }
+
+    &__contact-text {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    &__list-item {
+        list-style: none;
+        margin-bottom: 1.6rem;
+    }
+
+    &__list {
+        margin-bottom: 3.2rem;
+    }
+    &__link {
+        color:$color-footer;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+    }
+
+    &__social-block {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__social-container {
+        width: 28px;
+        height: 28px;
+        border: 1px solid white;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0.984rem;
+    }
+}
+
+.fab {
+    font-size: 1.1rem;
+}
+
+.fa-facebook-f {
+    position: relative;
+    top: -1px;
+}
+
+.fa-twitter {
+    position: relative;
+    right: -1px;
+    top: -1px;
+}
+
+.fa-instagram {
+    position: relative;
+    top: -1px;
+}

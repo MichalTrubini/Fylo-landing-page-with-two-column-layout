@@ -23,9 +23,9 @@
       </div>
       <div class="nav__list-wrapper">
         <ul class="nav__list">
-          <a href="#" class="nav__list-link"><li class="nav__list-item"></li>Features</a>
-          <a href="#" class="nav__list-link"><li class="nav__list-item"></li>Team</a>
-          <a href="#" class="nav__list-link"><li class="nav__list-item"></li>Sign In</a>
+          <li class="nav__list-item"><a href="#" class="nav__list-link">Features</a></li>
+          <li class="nav__list-item"><a href="#" class="nav__list-link">Team</a></li>
+          <li class="nav__list-item"><a href="#" class="nav__list-link">Sign In</a></li>
         </ul>
       </div>
     </nav>
@@ -68,8 +68,12 @@
             Securely share files and folders with friends, family and colleagues for 
             live collaboration. No email attachments required!          
           </p>
-          <a href="#" class="intro__link">See how Fylo works</a>
+          <div class="intro__link-wrapper">
+            <a href="#" class="intro__link">See how Fylo works</a>
+            <img src="images/icon-arrow.svg" alt="arrow" class="intro__link-icon">
+          </div>
           <div class="intro__testimonials-container">
+            <img src="images/icon-quotes.svg" alt="quote" class="intro__testimonial-quote">
             <p class="intro__testimonial">
               Fylo has improved our team productivity by an order of magnitude. Since 
               making the switch our team has become a well-oiled collaboration machine.
@@ -107,7 +111,7 @@
   </main>
 
   <footer class="footer">
-    <div class="footer__logo">
+    <div class="footer__logo-container">
       <img src="images/logo.svg" alt="Fylo" class="footer__logo">
     </div>
     <div class="footer__contact-links-container">
@@ -127,24 +131,30 @@
       </div>
       <div class="footer__links-container">
         <ul class="footer__list">
-          <a href="#" class="footer__link"><li class="footer__list-item"></li>About Us</a>
-          <a href="#" class="footer__link"><li class="footer__list-item"></li>Jobs</a>
-          <a href="#" class="footer__link"><li class="footer__list-item"></li>Press</a>
-          <a href="#" class="footer__link"><li class="footer__list-item"></li>Blog</a>
+          <li class="footer__list-item"><a href="#" class="footer__link">About Us</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__link">Jobs</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__link">Press</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__link">Blog</a></li>
         </ul>
       </div>
       <div class="footer__links-container">
         <ul class="footer__list">
-          <a href="#" class="footer__link"><li class="footer__list-item"></li>Contact Us</a>
-          <a href="#" class="footer__link"><li class="footer__list-item"></li>Terms</a>
-          <a href="#" class="footer__link"><li class="footer__list-item"></li>Privacy</a>
+          <li class="footer__list-item"><a href="#" class="footer__link">Contact Us</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__link">Terms</a></li>
+          <li class="footer__list-item"><a href="#" class="footer__link">Privacy</a></li>
         </ul>
       </div>
     </div>
     <div class="footer__social-block">
-      <i class="fab fa-facebook-f"></i>
-      <i class="fab fa-twitter"></i>
-      <i class="fab fa-instagram"></i>
+      <div class="footer__social-container">
+        <i class="fab fa-facebook-f"></i>
+      </div>
+      <div class="footer__social-container">
+        <i class="fab fa-twitter"></i>
+      </div>
+      <div class="footer__social-container">
+        <i class="fab fa-instagram"></i>
+      </div>
     </div>
   </footer>
 </body>
