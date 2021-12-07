@@ -160,4 +160,32 @@ img {
 html {
   font-size: 62.5%;
 }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #fff;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 400;
+}
+
+button {
+  font-family: 'Raleway', sans-serif;
+  background: #3065f8;
+}
+
+footer {
+  background: #070439;
+  color: #fff;
+}
+
+.intro {
+  background: #f6f6fe;
+  color: #605e7d;
+}
+
+.sign-up {
+  background: #585989;
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
