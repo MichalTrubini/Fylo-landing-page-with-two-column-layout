@@ -252,6 +252,7 @@ body {
   color: #070439;
   font-size: 1.2rem;
   line-height: 1.4rem;
+  font-family: 'Raleway', sans-serif;
 }
 
 .hero {
@@ -298,9 +299,13 @@ body {
   border-radius: 3.125px;
 }
 
-.intro__curve-top {
+.intro__curve-top-mb {
   position: relative;
   top: 6px;
+}
+
+.intro__curve-top-dt {
+  display: none;
 }
 
 .intro__content-wrapper {
@@ -543,5 +548,153 @@ body {
 .fa-instagram {
   position: relative;
   top: -1px;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    text-align: left;
+  }
+  .header, .main, .footer {
+    max-width: 144rem;
+  }
+  .header {
+    padding: 6.5rem 8rem 0;
+    margin-bottom: 8.6rem;
+  }
+  .nav__logo {
+    width: 166px;
+  }
+  .nav__list-item {
+    margin-left: 5.7rem;
+  }
+  .nav__list-link {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+  }
+  .hero {
+    padding: 0 8rem;
+    margin-bottom: 16.4rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero__heading {
+    font-size: 4rem;
+    line-height: 6rem;
+    margin-bottom: 1.6rem;
+  }
+  .hero__about {
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+    padding: 0;
+    padding-right: 6rem;
+    margin-bottom: 2.5rem;
+  }
+  .hero__text-wrapper {
+    width: 86.7%;
+    margin-right: 1.3rem;
+  }
+  .hero__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .hero__input {
+    margin-right: 1.6rem;
+    width: 32rem;
+    height: 45px;
+    font-size: 1.4rem;
+    letter-spacing: 0.45px;
+  }
+  .hero__button {
+    width: 20rem;
+    height: 45px;
+  }
+  .intro__curve-top-mb {
+    display: none;
+  }
+  .intro__curve-top-dt {
+    display: block;
+  }
+  .intro__content-wrapper {
+    padding: 4rem 8rem 10.7rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .intro__image-container, .intro__text-content {
+    padding: 0;
+  }
+  .intro__heading {
+    font-size: 4rem;
+    line-height: 4.7rem;
+    margin-bottom: 3.8rem;
+  }
+  .intro__about {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    width: 80%;
+  }
+  .intro__text-content {
+    width: 65rem;
+    margin-right: 8.8rem;
+  }
+  .intro__image-container {
+    width: 54.2rem;
+  }
+  .intro__link-wrapper {
+    margin: 0;
+    width: 16.6rem;
+  }
+  .intro__link {
+    font-size: 1.6rem;
+  }
+  .intro__testimonials-container {
+    margin: 0;
+    margin-top: 4.5rem;
+    width: 54.8%;
+    padding: 2rem 3.3rem 2.6rem;
+  }
+  .intro__testimonial {
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    margin-bottom: 1.6rem;
+  }
+  .intro__testimonial-profile-pic {
+    width: 32px;
+  }
+  .intro__testimonial-name {
+    font-size: 1.1rem;
+    letter-spacing: 0.55px;
+    line-height: 1.4rem;
+  }
+  .intro__testimonial-position {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.36px;
+  }
+  .sign-up {
+    padding: 10rem 8rem 8.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 /*# sourceMappingURL=style.css.map */
