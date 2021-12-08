@@ -656,6 +656,9 @@ body {
     height: 45px;
     margin-top: 0;
   }
+  .hero__image-container {
+    margin-bottom: 0;
+  }
   .intro__curve-top-mb {
     display: none;
   }
