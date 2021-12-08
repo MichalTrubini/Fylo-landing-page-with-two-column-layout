@@ -45,8 +45,11 @@
           family, and co-workers.        
         </p>
         <form class="hero__form">
-          <input type="email" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" aria-label="email" class="hero__input" placeholder="Enter your email..." required>
-          <button class="hero__button">Get Started</button>
+          <div class="hero__input-error-wrapper">
+            <input type="email" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" aria-label="email" class="hero__input" placeholder="Enter your email..." data-selected="1" required>
+            <p class="error-message" data-selected="1">Please check your email</p>
+          </div>
+          <button class="hero__button" data-selected="1">Get Started</button>
         </form>
       </div>
     </section>
@@ -105,8 +108,11 @@
         </p>
       </div>
       <div class="sign-up__form">
-        <input type="email" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" aria-label="email" class="sign-up__input" placeholder="email@example.com" required>
-        <button class="sign-up__button">Get Started For Free</button>
+        <div class="sign-up__input-error-wrapper">
+          <input type="email" pattern="^[\w]{1,}[\w.+-]{0,}@[\w-]{2,}([.][a-zA-Z]{2,}|[.][\w-]{2,}[.][a-zA-Z]{2,})$" aria-label="email" class="sign-up__input" placeholder="email@example.com" data-selected="2" required>
+          <p class="error-message" data-selected="2">Please check your email</p>
+        </div>
+        <button class="sign-up__button" data-selected="2">Get Started For Free</button>
       </div>
     </section>
   </main>

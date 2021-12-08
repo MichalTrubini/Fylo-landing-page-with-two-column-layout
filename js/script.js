@@ -6,18 +6,21 @@
     submitButton.forEach(function(item){
 
         item.addEventListener('click', function(){
-            let input = item.querySelector('input');
-            let errorMessage = item.querySelector('.footer__form-error-message');
+            dataAttribute = item.getAttribute('data-selected');
+            let input = document.querySelector(`input[data-selected='${dataAttribute}']`);
+            let errorMessage = document.querySelector(`.error-message[data-selected='${dataAttribute}']`);
           
             if(!input.validity.valid) {
                 input.classList.add('input-error');
-                errorMessage.classList.add('show-element');
+                errorMessage.classList.add('error-message-visible');
+                item.classList.add('button-error');
             } 
             
             input.addEventListener('input',function(){
                 if(input.validity.valid) {
                     input.classList.remove('input-error');
-                    errorMessage.classList.remove('show-element');
+                    errorMessage.classList.remove('error-message-visible');
+                    item.classList.remove('button-error');
                 }
             });
         })      
@@ -31,3 +34,20 @@ document.addEventListener('invalid', (function(){
       e.preventDefault();
     };
   })(), true);
+
+//HOVER EFFECT SOCIAL ICONS
+
+(function(){
+
+    let socialIcon = document.querySelectorAll('.footer__social-container');
+
+    socialIcon.forEach(function (item){
+        item.addEventListener('mouseover',function (){
+            item.classList.add('footer__social-container-hover')
+        })
+
+        item.addEventListener('mouseout',function (){
+            item.classList.remove('footer__social-container-hover')
+        })
+    })
+})();
