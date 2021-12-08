@@ -534,22 +534,6 @@ body {
   font-size: 1.1rem;
 }
 
-.fa-facebook-f {
-  position: relative;
-  top: -1px;
-}
-
-.fa-twitter {
-  position: relative;
-  right: -1px;
-  top: -1px;
-}
-
-.fa-instagram {
-  position: relative;
-  top: -1px;
-}
-
 @media screen and (min-width: 1440px) {
   body {
     text-align: left;
@@ -695,6 +679,90 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
+  .sign-up__heading {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
+  .sign-up__text {
+    width: 53.3rem;
+  }
+  .sign-up__about {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding-right: 2.5rem;
+  }
+  .sign-up__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sign-up__input {
+    width: 48rem;
+    height: 48px;
+    margin-bottom: 1.6rem;
+    -webkit-box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+            box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+    border-radius: 3.125px;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    padding: 1.6rem 2.2rem 1.8rem;
+  }
+  .sign-up__button {
+    width: 20rem;
+    height: 48px;
+    -webkit-box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+            box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+    border-radius: 3.125px;
+    font-size: 1.4rem;
+  }
+  .footer {
+    padding: 9.2rem 8rem 8.6rem;
+  }
+  .footer__logo {
+    width: 135px;
+    margin-bottom: 3.6rem;
+  }
+  .footer__contact-links-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer__contact-container {
+    margin-right: 22.2rem;
+  }
+  .footer__links-container {
+    margin-right: 20rem;
+  }
+  .footer__links-container:last-child {
+    margin-right: 10rem;
+  }
+  .footer__social-block {
+    position: relative;
+    left: -15px;
+  }
+}
+
+.fab:hover, button:hover {
+  cursor: pointer;
+}
+
+button:hover {
+  background: #6C9BFF;
+}
+
+.footer__link:hover, .nav__list-link:hover {
+  color: #6b9aff;
 }
 /*# sourceMappingURL=style.css.map */

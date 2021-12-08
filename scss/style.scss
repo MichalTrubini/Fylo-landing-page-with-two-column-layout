@@ -337,22 +337,6 @@ body {
     font-size: 1.1rem;
 }
 
-.fa-facebook-f {
-    position: relative;
-    top: -1px;
-}
-
-.fa-twitter {
-    position: relative;
-    right: -1px;
-    top: -1px;
-}
-
-.fa-instagram {
-    position: relative;
-    top: -1px;
-}
-
 @media screen and (min-width:1440px) {
 
     body {
@@ -513,5 +497,91 @@ body {
     .sign-up {
         padding: 10rem 8rem 8.5rem;
         display: flex;
+        justify-content: space-between;
+
+        &__heading {
+            font-size: 3.2rem;
+            line-height: 4.8rem;
+        }
+
+        &__text {
+            width: 53.3rem;
+        }
+
+        &__about {
+            margin: 0;
+            font-size: 1.6rem;
+            line-height: 2.4rem;
+            padding-right: 2.5rem;
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__input {
+            width: 48rem;
+            height: 48px;
+            margin-bottom: 1.6rem;
+            box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+            border-radius: 3.125px;
+            font-size: 1.2rem;
+            line-height: 1.4rem;
+            padding: 1.6rem 2.2rem 1.8rem;
+        }
+
+        &__button {
+            width: 20rem;
+            height: 48px;
+            box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
+            border-radius: 3.125px;
+            font-size: 1.4rem;
+        }
     }
+
+    .footer {
+        padding: 9.2rem 8rem 8.6rem;
+
+        &__logo {
+            width: 135px;
+            margin-bottom: 3.6rem;
+        }
+
+        &__contact-links-container {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        &__contact-container {
+            margin-right: 22.2rem;
+        }
+
+        &__links-container {
+            margin-right: 20rem;
+        }
+
+        &__links-container:last-child {
+            margin-right: 10rem;
+        }
+
+        &__social-block {
+            position: relative;
+            left: -15px;
+        }
+    }
+}
+
+//HOVER EFFECTS
+
+.fab:hover, button:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6C9BFF;
+}
+
+.footer__link:hover, .nav__list-link:hover {
+    color: hsla(221, 100%, 71%, 1);
 }
