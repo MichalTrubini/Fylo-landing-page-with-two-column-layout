@@ -34,20 +34,3 @@ document.addEventListener('invalid', (function(){
       e.preventDefault();
     };
   })(), true);
-
-//HOVER EFFECT SOCIAL ICONS
-
-(function(){
-
-    let socialIcon = document.querySelectorAll('.footer__social-container');
-
-    socialIcon.forEach(function (item){
-        item.addEventListener('mouseover',function (){
-            item.classList.add('footer__social-container-hover')
-        })
-
-        item.addEventListener('mouseout',function (){
-            item.classList.remove('footer__social-container-hover')
-        })
-    })
-})();

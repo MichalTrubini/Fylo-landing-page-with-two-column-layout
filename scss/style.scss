@@ -86,9 +86,8 @@ body {
 }
 
 .hero {
-
-    padding: 0 2.8rem;
-    margin-bottom: 9rem;
+    background:url(../images/bg-curve-mobile.svg) bottom no-repeat;
+    padding: 0 2.8rem 14.3rem;
 
     &__input-error-wrapper {
         max-width: 30.4rem;
@@ -171,19 +170,26 @@ body {
     }
 
     &__link {
-        display: block;
+        display: inline-block;
         color: $color-link;
         font-size: 1.2rem;
         line-height: 1.6rem;
+        padding-bottom: 0.6rem;
+        border-bottom: 1px solid $Moderate-Cyan;
+    }
+
+    &__link > span {
+        display: inline-block;
+        height: 12px;
+        position: relative;
+        bottom: -2px;
     }
     
     &__link-wrapper {
-        width: 13rem;
-        margin: 3.6rem auto 4rem;
+        margin: 3.6rem 0 4rem;
         display: flex;
         align-items: center;
-        padding-bottom: 0.6rem;
-        border-bottom: 1px solid $Moderate-Cyan;
+        justify-content: center;
     }
 
     &__link-icon {
@@ -334,18 +340,19 @@ body {
         justify-content: center;
     }
 
-    &__social-container {
-        width: 28px;
-        height: 28px;
-        border: 1px solid white;
-        border-radius: 100%;
+    &__social-link {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 0.984rem;
+        width: 28px;
+        height: 28px;
+        border:1px solid white;
+        border-radius: 100%;
+        color: $White;
+        margin-right: 1rem;
     }
 
-    &__social-container:last-child {
+    &__social-link:last-child {
         margin-right: 0;
     }
 }
@@ -415,8 +422,8 @@ body {
     }
 
     .hero {
-        padding: 0 8rem;
-        margin-bottom: 16.4rem;
+        background: url(../images/bg-curve-desktop.svg) bottom no-repeat;
+        padding: 0 8rem 27.8rem;
 
         display: flex;
         flex-direction: row-reverse;
@@ -520,6 +527,15 @@ body {
 
         &__link {
             font-size: 1.6rem;
+        }
+
+        &__link:hover {
+            color: #71DFCC;
+            border-bottom: 1px solid  #71DFCC;
+
+            span {
+                filter: brightness(0) saturate(100%) invert(81%) sepia(75%) saturate(277%) hue-rotate(100deg) brightness(92%) contrast(90%);
+            }
         }
 
         &__testimonials-container {
@@ -634,7 +650,14 @@ body {
             left: -15px;
         }
 
-        &__social-container-hover {
+        &__social-link {
+            width: 32px;
+            height: 32px;
+            margin-right: 1.7rem;
+        }
+
+        &__social-link:hover {
+            color: #6C9BFF;
             border:1px solid #6C9BFF;
         }
     }
@@ -645,7 +668,7 @@ body {
 
     //HOVER EFFECTS
 
-    .fab:hover, button:hover, .footer__social-container:hover {
+    .fab:hover, button:hover {
         cursor: pointer;
     }
 
@@ -653,7 +676,7 @@ body {
         background: #6C9BFF;
     }
 
-    .footer__link:hover, .nav__list-link:hover, .footer__social-container:hover {
+    .footer__link:hover, .nav__list-link:hover {
         color: hsla(221, 100%, 71%, 1);
     }
 }
